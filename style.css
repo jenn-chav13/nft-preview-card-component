@@ -1,0 +1,90 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main-BG);
+    font-size: 1.125rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 1.375rem;
+}
+
+.card {
+    color: var(--Soft-blue);
+    background-color: var(--Very-dark-blue-card-BG);
+    box-sizing: border-box;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-info p {
+    font-weight: 300;
+}
+
+.card-value-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    font-size: 1rem;
+}
+
+.card-ethereum {
+    color: var(--Cyan);
+
+}
+
+.card-info p.card-ethereum {
+    font-weight: 600;
+}
+
+.card-ethereum::before {
+    content: url(./images/icon-ethereum.svg);
+    margin-inline-end: 10px;
+    vertical-align: -10%;
+}
+
+.card-time-left::before {
+    content: url(./images/icon-clock.svg);
+    margin-inline-end: 10px;
+    vertical-align: -10%;
+}
+
+.card-creator-name {
+    color: var(--White);
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.card-avatar {
+    width: 30px;
+    height: 30px;
+    margin-inline-end: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
